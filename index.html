@@ -35,46 +35,46 @@
 
 </head>
 
-<body>
+<body class="center">
 
-  <div class="row">
-    <div class="col" style='margin-left:100px;'>
-      <canvas id="canvas" width="300" height="300" class="canvas"
-        style="border:1px solid #b9bfc9;margin-top:25px;"></canvas>
-      <div class="btn-group" style='margin-top:40px; '>
+  <div class="row center" style="max-width: 60vw;">
+    <div class="col">
+      <div>
+        <canvas id="canvas" width="300" height="300" class="canvas" style="border:1px solid #b9bfc9;"></canvas>
+      </div>
+      <div class="btn-group" style='margin-top:20px;'>
         <input type="range" min="5" max="20" value="10" class="slider" id="myRange" style='margin-top:20px;'>
-        <button type="button" class="btn btn-outline-primary" onclick='erase()' style='margin-left:10px;'
-          disabled>Clear</button>
+        <button type="button" class="btn btn-outline-primary" onclick='erase()' style='margin-left:10px;' disabled>
+          پاک کن
+        </button>
       </div>
     </div>
     <div class="col">
-      <section style="margin-top:120px">
-        <div class="pieID pie">
+      <div class="pieID pie">
 
-        </div>
-        <ul class="pieID legend">
-          <li>
-            <em id="sym1"></em>
-            <span id="prob1"></span>
-          </li>
-          <li>
-            <em id="sym2"></em>
-            <span id="prob2"></span>
-          </li>
-          <li>
-            <em id="sym3"></em>
-            <span id="prob3"></span>
-          </li>
-          <li>
-            <em id="sym4"></em>
-            <span id="prob4"></span>
-          </li>
-          <li>
-            <em id="sym5"></em>
-            <span id="prob5"></span>
-          </li>
-        </ul>
-      </section>
+      </div>
+      <ul class="pieID legend">
+        <li>
+          <em id="sym1"></em>
+          <span id="prob1"></span>
+        </li>
+        <li>
+          <em id="sym2"></em>
+          <span id="prob2"></span>
+        </li>
+        <li>
+          <em id="sym3"></em>
+          <span id="prob3"></span>
+        </li>
+        <li>
+          <em id="sym4"></em>
+          <span id="prob4"></span>
+        </li>
+        <li>
+          <em id="sym5"></em>
+          <span id="prob5"></span>
+        </li>
+      </ul>
     </div>
   </div>
 </body>
