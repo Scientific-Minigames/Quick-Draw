@@ -2214,11 +2214,11 @@ fabric.CommonMethods = {
   }
 
   var pointerX = function(event) {
-        return event.clientX || event.touches[0].clientX;
+        return event.clientX || event.touches[0]?.clientX;
       },
 
       pointerY = function(event) {
-        return event.clientY || event.touches[0].clientY;
+        return event.clientY || event.touches[0]?.clientY;
       };
 
   function _getPointer(event, pageProp, clientProp) {
