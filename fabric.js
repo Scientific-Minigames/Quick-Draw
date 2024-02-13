@@ -2214,11 +2214,11 @@ fabric.CommonMethods = {
   }
 
   var pointerX = function(event) {
-        return event.clientX;
+        return event.clientX || event.touches[0].clientX;
       },
 
       pointerY = function(event) {
-        return event.clientY;
+        return event.clientY || event.touches[0].clientY;
       };
 
   function _getPointer(event, pageProp, clientProp) {
@@ -2227,6 +2227,10 @@ fabric.CommonMethods = {
 
     if (eventTouchProp && eventTouchProp[0]) {
       pointer = eventTouchProp[0][clientProp];
+    }
+
+    if (event.touches && event.touches[0]){
+      pointer = event.touches[0][clientProp];
     }
 
     if (typeof pointer === 'undefined') {
@@ -6516,7 +6520,7 @@ fabric.ElementsParser.prototype.checkIfDone = function() {
      * @type Boolean
      * @default
      */
-    allowTouchScrolling: true,
+    allowTouchScrolling: false,
 
     /**
      * Indicates whether this canvas will use image smoothing, this is on by default in browsers
