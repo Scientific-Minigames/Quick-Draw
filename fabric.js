@@ -6516,7 +6516,7 @@ fabric.ElementsParser.prototype.checkIfDone = function() {
      * @type Boolean
      * @default
      */
-    allowTouchScrolling: false,
+    allowTouchScrolling: true,
 
     /**
      * Indicates whether this canvas will use image smoothing, this is on by default in browsers
